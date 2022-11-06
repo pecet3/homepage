@@ -1,0 +1,31 @@
+.table__container {
+    overflow-x: auto;
+}
+.table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: normal;
+}
+
+.table__row:nth-child(even){
+    background-color: #3dbff788;
+}
+.table__caption {
+    font-weight: 900;
+    padding-bottom: 20px;
+    font-size: 23px;
+}
+.table__header {
+    background-color: #20a1d8;
+    border: 1px solid;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.table__cell {
+    border: 1px solid;
+    padding: 9px;
+    font-weight: normal;
+    background-color: #b2e2f65f;
+}

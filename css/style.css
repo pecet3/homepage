@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+
+
+
+.body {
+    background: rgb(216, 220, 221);
+    background: linear-gradient(90deg, rgba(216, 220, 221, 1) 14%, rgba(65, 221, 246, 1) 100%);
+
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Quicksand', sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.body--dark {
+    background: rgb(14,73,245);
+    background: linear-gradient(247deg, rgba(14,73,245,1) 0%, rgba(84,88,88,1) 100%);
+
+}
+

@@ -1,0 +1,69 @@
+.main {
+    background-color: #b8b6b6;
+    color: rgb(12, 12, 12);
+    padding-bottom: 10px;
+    padding: -5px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 500px 40px #cbc7c7;
+    text-align: left;
+}
+
+.main--dark {
+    background-color: rgb(11, 42, 202);
+    color: rgb(209, 207, 207);
+    box-shadow: 0px 0px 500px 40px rgb(3, 31, 97);
+}
+
+.main__text {
+    padding: 10px 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.main__header {
+    color: rgb(33, 33, 74);
+    text-align: center;
+    padding-top: 10px;
+    text-shadow: 3px 5px 5px rgb(255, 255, 255);
+}
+
+
+.main__header--dark {
+    color: rgb(209, 209, 229);
+    text-shadow: 3px 5px 5px rgb(21, 2, 96);
+}
+
+
+.main__article--about {
+    border-bottom: 2px dotted rgb(143, 143, 143);
+    padding-bottom:15px ;
+}
+.main__article--hobby {
+    padding-bottom: 40px;
+    border-bottom: 2px dotted rgb(143, 143, 143);
+}
+
+.main__list {
+    list-style-type: disc;
+    padding: 0px;
+}
+
+.main__listItem {
+    font-size: 17.5px;
+    list-style: none;
+    padding: 0 20px;
+    font-weight: 700;
+    margin: 0 auto;
+    text-decoration: 1px underline rgb(56, 55, 54);
+    text-align: left;
+}
+
+.main__text--speedcubing {
+    margin-bottom: 0px;
+}
+.main__article--equipment {
+    text-align: center;
+    margin-top: 15px;
+    padding:25px 0;
+    margin: auto 60px;
+}

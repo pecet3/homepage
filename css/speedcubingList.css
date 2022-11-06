@@ -1,0 +1,10 @@
+
+.speedcubingList {
+    margin: 0px auto;
+    list-style-type: disc;
+    line-height: 1.5;
+}
+
+.speedcubingList__item {
+    text-decoration: underline 1px;
+}

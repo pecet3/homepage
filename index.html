@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="js/script.js"></script>
+    <title>Jakub Pacewicz - wizytówka</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">
+    <link href="css/navigation.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/table.css" rel="stylesheet" type="text/css">
+    <link href="css/speedcubingList.css" rel="stylesheet" type="text/css">
+    <link href="css/footer.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="body" class="body">
+    <header id="header" class="header">
+        <button id="themeButton" class="header__themeButton">🌙</button>
+        <p id="title" class="header__title">Jakub Pacewicz</p>
+        <div class="header__photoContainer"><img src="https://i.ibb.co/njr61Jd/image1.jpg" class="header__photo js-image"
+                alt="myPhoto" width="220px" height="220px">
+            <div class="header__buttonsContainer">
+                <button class="js-buttonLeft header__button">◀</button>
+                <button class="js-buttonRight header__button">▶</button>
+            </div>
+        </div>
+    </header>
+    <nav class="navigation">
+        <li>
+            <ul class="navigation__item"><a href="#body" class="navigation__link">Strona główna</a></ul>
+            <ul class="navigation__item"><a href="#about" class="navigation__link">O mnie</a></ul>
+            <ul class="navigation__item"><a href="#hobby" class="navigation__link">Moje zainteresowania</a></ul>
+            <ul class="navigation__item"><a href="#equipment" class="navigation__link">Mój gitarowy sprzęt</a></ul>
+        </li>
+    </nav>
+    <main id="main" class="main">
+        <article id="about" class="main__article--about">
+            <h1 class="main__header js-main__header">Parę słów o mnie</h1>
+            <p class="main__text">Hej, jestem <b>Jakub Pacewicz</b>. Mam 22 lata i pochodzę z Szczytna. Aktualnie
+                mieszkam w
+                Gdańsku, na Oliwie.
+                Pracuję w firmię Telus International, gdzie zajmuję się obsługą klienta.
+                Po pracy gram na gitarze elektrycznej oraz uczę się programować.</p>
+        </article>
+        <article class="main__article main__article--hobby" id="hobby">
+            <h2 class="main__header js-main__header2">Moje Zainteresowania</h2>
+            <ul class="main__list">
+                <li class="main__listItem">🎸 Gitara 🎵</li>
+                <p class="main__text">Tak jak wspominałem - moją pasją jest gra na gitarze.<br>
+                    Gram praktycznie codziennie. Zazwyczaj improwizuję lub tworzę coś swojego.
+                    Dzięki zainteresowaniu się teorią muzyki, rozumiem co gram oraz gram lepiej.
+                    Bardzo polecam zainteresowanie się teorią, pomimo, że może wydawać się nudna, to
+                    <b>Taka nie jest!</b>
+                </p>
+                <li class="main__listItem">📸 Fotografia 📷</li>
+                <p class="main__text">Moim drugim takim hobby, tylko, że bardziej luźnym jest fotografia oraz grafika
+                    komputerowa.
+                    Lubię czasem
+                    wykonać jakieś ciekawe zdjęcie. <strong>Zazwyczaj ludzie je chwalą!</strong></p>
+                <li class="main__listItem">🎲 Kostka Rubika 🎲</li>
+                <p class="main__text main__text--speedcubing">Kiedyś, kiedy miałem 12 lat tata nauczył mnie układać kostkę rubika.
+                    Wraz z nim odkryłem co to jest speedcubing i zagłębiłem się w ten sport. Jeździłem z nim często na
+                    zawody, gdzie brałem w nich udział.
+                <ul class="speedcubingList"><u class="speedcubingList__item">Moimi ulubionymi kostkami są:</u>
+                    <li>klasyczna 3x3x3</li>
+                    <li>kostka 4x4x4</li>
+                    <li>kostka piramidka tzw. <em>Pyraminx</em></li>
+                    <li>Skewb</li>
+                    <li>Rubik's Clock (technicznie nie jest to kostka, a łamigówka i widnieje jako oficjalna
+                        konkurencja na zawodach)</li>
+                    <ul>
+
+                    </ul>
+        </article>
+        <article class="main__article main__article--equipment" id="equipment">
+            <div class="table__container">
+                <table class="table">
+                    <caption class="table__caption main__header">Mój gitarowy sprzęt</caption>
+                    <tr class="table__row">
+                        <th class="table__header" scope="col">Nazwa</th>
+                        <th class="table__header" scope="col">Typ</th>
+                        <th class="table__header" scope="col">Cena (PLN)</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Harley Benton SC-DLX</th>
+                        <th class="table__cell">Gitara</th>
+                        <th class="table__cell js-price1">1450</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Orange Crush 20</th>
+                        <th class="table__cell">Wzmacniacz</th>
+                        <th class="table__cell js-price2">550</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Foucusrite Scarlett Solo</th>
+                        <th class="table__cell">Interface Audio</th>
+                        <th class="table__cell js-price3">530</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Audio Technica m30x</th>
+                        <th class="table__cell">Słuchawki Studyjne</th>
+                        <th class="table__cell js-price4">330</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Neural DSP Tim Henson Archetype</th>
+                        <th class="table__cell">Symulacja wzmacniacza</th>
+                        <th class="table__cell js-price5">310</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell" scope="row">Aurora DSP LaBoga mr Hector</th>
+                        <th class="table__cell">Symulacja wzmacniacza</th>
+                        <th class="table__cell js-price6">150</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__header" scope="row" colspan="2">Razem wydałem aż:</th>
+                        <th class="table__cell js-finalAmount"
+                            style="background-color: rgba(0, 255, 255, 0.475) ; font-weight: bold;"></th>
+                    </tr>
+                </table>
+            </div>
+        </article>
+
+        </article>
+    </main>
+    <footer id="footer" class="footer">
+        <p>Moja pierwsza strona na której ucze się, Jakub Pacewicz 2022 (c)</p>
+    </footer>
+</body>
+
+</html>
