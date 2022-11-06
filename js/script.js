@@ -11,17 +11,17 @@ buttonRight.addEventListener('click', () => {
     image.src = "https://i.ibb.co/pKkmXcs/image2.jpg";
 })
 
-let themeButton = document.querySelector(".header__themeButton");
-let body = document.querySelector(".body");
-let title = document.querySelector(".header__title");
-let main = document.querySelector(".main");
+let themeButton = document.querySelector(".js-header__themeButton");
+let body = document.querySelector(".js-body");
+let title = document.querySelector(".js-header__title");
+let main = document.querySelector(".js-main");
 let header = document.querySelector(".js-main__header");
 let header2 = document.querySelector(".js-main__header2");
 
-let mainPhoto = document.querySelector(".header__photo");
-let footer = document.querySelector(".footer");
-let navigation = document.querySelector(".navigation");
-let caption = document.querySelector(".table__caption");
+let mainPhoto = document.querySelector(".js-image");
+let footer = document.querySelector(".js-footer");
+let navigation = document.querySelector(".js-navigation");
+let caption = document.querySelector(".js-table__caption");
 
 themeButton.addEventListener('click', () => {
     title.classList.toggle('header__title--dark');
