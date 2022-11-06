@@ -37,7 +37,7 @@ themeButton.addEventListener('click', () => {
     // ? "🌙"
     // : "🌞"
     // I dunno why it doesn't work...
-    if (themeButton.innerText == "🌙"){
+    if (themeButton.innerText == "🌙") {
         themeButton.innerText = "🌞";
     }
     else {
@@ -53,9 +53,9 @@ let price5 = Number(document.querySelector(".js-price5").innerText);
 let price6 = Number(document.querySelector(".js-price6").innerText);
 let finalAmount = document.querySelector(".js-finalAmount");
 
-function addPrices(price1,price2,price3,price4,price5,price6){
-    let result = price1 + price2 + price3 + price4 + price5+ price6;
+function addPrices(price1, price2, price3, price4, price5, price6) {
+    let result = price1 + price2 + price3 + price4 + price5 + price6;
     finalAmount.innerText = result;
 }
 
-addPrices(price1,price2,price3,price4,price5,price6);
+addPrices(price1, price2, price3, price4, price5, price6);
