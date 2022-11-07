@@ -33,15 +33,17 @@
     text-shadow: 3px 5px 5px rgb(21, 2, 96);
 }
 
-
-.main__article--about {
+.main__article {
     border-bottom: 2px dotted rgb(143, 143, 143);
-    padding-bottom: 15px;
 }
 
-.main__article--hobby {
-    padding-bottom: 40px;
-    border-bottom: 2px dotted rgb(143, 143, 143);
+.main__article--equipment {
+    text-align: center;
+    margin-top: 15px;
+    margin: auto 60px;
+    border-bottom: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
 }
 
 .main__list {
@@ -61,11 +63,4 @@
 
 .main__text--speedcubing {
     margin-bottom: 0px;
-}
-
-.main__article--equipment {
-    text-align: center;
-    margin-top: 15px;
-    padding: 25px 0;
-    margin: auto 60px;
 }
