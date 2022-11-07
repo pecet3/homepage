@@ -34,8 +34,7 @@
 }
 
 .main__article {
-    border-bottom: 3px dotted rgb(122, 122, 122);
-    border-radius: 15px;
+    border-bottom: 2px dotted rgb(122, 122, 122);
 }
 
 .main__article--equipment {
