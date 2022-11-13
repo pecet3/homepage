@@ -4,4 +4,4 @@ Welcome to the my homepage project. I make this during the course of frontend. V
 https://pecet3.github.io/homepage/
 
 ## Animated Sreenshot
-![](images/readme.gif)
+![](images/readme_gif.gif)
