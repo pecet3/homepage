@@ -1,9 +1,7 @@
 {
     // variables needed for multiple functions
-
     const image = document.querySelector(".js-image");
     const themeButton = document.querySelector(".js-themeButton");
-
 
     // functions needed for change the main photo
     const onImageButtonLeftClick = () => {
@@ -11,6 +9,13 @@
     };
     const onImageButtonRightClick = () => {
         image.src = "https://i.ibb.co/pKkmXcs/image2.jpg";
+    };
+    const changeMainPhoto = () => {
+        const image = document.querySelector(".js-image");
+        const buttonLeft = document.querySelector(".js-buttonLeft");
+        const buttonRight = document.querySelector(".js-buttonRight");
+        buttonLeft.addEventListener('click', onImageButtonLeftClick);
+        buttonRight.addEventListener('click', onImageButtonRightClick);
     };
 
     // functions needed for change a theme
@@ -44,9 +49,11 @@
             themeButton.innerText = "🌙";
         }
     };
+    const changeTheme = () => {
+        themeButton.addEventListener('click', onThemeButtonClick);
+    };
 
     // functions for table 
-
     const addPrices = () => {
         const price1 = Number(document.querySelector(".js-price1").innerText);
         const price2 = Number(document.querySelector(".js-price2").innerText);
@@ -54,28 +61,27 @@
         const price4 = Number(document.querySelector(".js-price4").innerText);
         const price5 = Number(document.querySelector(".js-price5").innerText);
         const price6 = Number(document.querySelector(".js-price6").innerText);
-
         return price1 + price2 + price3 + price4 + price5 + price6;
     };
 
 
     const typeFinalValueOfGear = () => {
         const finalValueOfGear = document.querySelector(".js-finalValueOfGear");
-        console.log(addPrices());
         finalValueOfGear.innerText = addPrices();
     };
 
-    ///////////////////////////////////////////////////////////////
+    ////////////////////////////////////
+    const welcome = () => {
+        console.log("Witaj w konsoli :)");
+    };
 
     const init = () => {
-        console.log("Witaj w konsoli :)");
-        themeButton.addEventListener('click', (onThemeButtonClick));
+        welcome();
         typeFinalValueOfGear();
-        const buttonLeft = document.querySelector(".js-buttonLeft");
-        const buttonRight = document.querySelector(".js-buttonRight");
-        buttonLeft.addEventListener('click', (onImageButtonLeftClick));
-        buttonRight.addEventListener('click', (onImageButtonRightClick));
+        changeMainPhoto();
+        changeTheme();
+
     };
 
     init();
-};
+}
