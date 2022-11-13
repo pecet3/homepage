@@ -65,8 +65,8 @@
         finalValueOfGear.innerText = addPrices();
     };
 
-    ////////////////////////////////////////////////////////////////
-    
+    ///////////////////////////////////////////////////////////////
+
     const init = () => {
         console.log("Witaj w konsoli :)");
         themeButton.addEventListener('click', (onThemeButtonClick));
