@@ -70,7 +70,7 @@
         finalValueOfGear.innerText = addPrices();
     };
 
-    ////////////////////////////////////
+    // welcome and init function
     const welcome = () => {
         console.log("Witaj w konsoli :)");
     };
