@@ -4,14 +4,18 @@
     const themeButton = document.querySelector(".js-themeButton");
 
     // functions needed for change the main photo
-    const onImageButtonLeftClick = () => {
+    const onImageButtonLeftClick = (event) => {
+        event.preventDefault()
+
         image.src = "https://i.ibb.co/njr61Jd/image1.jpg";
     };
-    const onImageButtonRightClick = () => {
+    const onImageButtonRightClick = (event) => {
+        event.preventDefault()
+
         image.src = "https://i.ibb.co/pKkmXcs/image2.jpg";
     };
     const changeMainPhoto = () => {
-        const image = document.querySelector(".js-image");
+        
         const buttonLeft = document.querySelector(".js-buttonLeft");
         const buttonRight = document.querySelector(".js-buttonRight");
         buttonLeft.addEventListener('click', onImageButtonLeftClick);
@@ -19,7 +23,9 @@
     };
 
     // functions needed for change a theme
-    const onThemeButtonClick = () => {
+    const onThemeButtonClick = (event) => {
+        event.preventDefault()
+
         const body = document.querySelector(".js-body");
         const title = document.querySelector(".js-header__title");
         const main = document.querySelector(".js-main");
