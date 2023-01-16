@@ -16,6 +16,8 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0 auto;
         font-family: 'Inter', sans-serif;
         color: ${({theme})=> theme.colors.mineShaft};
+        background-color: ${({theme})=> theme.colors.athensGray};
+        padding: 0 8px;
     }    
     
 `;
