@@ -1,9 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from './features/Header';
 
 function App() {
   return (
-   <p>test</p>
+    <Header />
   );
 }
 
