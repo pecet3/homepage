@@ -17,8 +17,8 @@ export const Header = () => {
         <>
             <Wrapper>
                 <Photo src={HeaderPhoto} alt="Moje zdjęcie" />
-                <TextContainer>
                 <ThemeSwith />
+                <TextContainer>
                     <ThisIs>This is</ThisIs>
                     <MyName>Jakub Pacewicz</MyName>
                     <About>
