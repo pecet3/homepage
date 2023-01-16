@@ -3,8 +3,14 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
     display: flex;
     gap: 12px;
-    align-self: flex-end;
+    align-self: flex-start;
     align-items: center;
+    order: 2;
+
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        order: 0;
+    }
+    
 `;
 
 export const DarkModeInfo = styled.p`
@@ -15,13 +21,16 @@ export const DarkModeInfo = styled.p`
     color: ${({ theme }) => theme.colors.slateGray};
     padding: 5px 0;
     text-transform: uppercase;
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        display:none;
+    }
 `;
 
 export const Switch = styled.div`
     width: 47px;
     height: 25px;
     border-radius: 25%/50%;
-    background-color: ${({ theme }) => theme.colors.mercury};
+    background-color: ${({ theme }) => theme.colors.iron};
     border: 1px solid ${({ theme }) => theme.colors.slateGray};
     display: flex;
     align-items: center;
