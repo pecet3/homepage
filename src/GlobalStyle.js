@@ -14,6 +14,8 @@ export const GlobalStyle = createGlobalStyle`
         max-width: 1216px;
         text-align: center;
         margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+        color: ${({theme})=> theme.colors.mineShaft};
     }    
     
-`
+`;
