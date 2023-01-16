@@ -2,16 +2,27 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     margin-top: 119px;
-    margin-bottom: 63px;
+    margin-bottom: 72px;
     max-width: 1200px;
     display: grid;
-    grid-template-columns: auto 4fr auto;
+    grid-template-columns: auto auto auto;
+
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        grid-template-columns: auto auto;
+        margin-top: 32px;
+    }
 `;
 
 export const Photo = styled.img`
     width: 398px;
     height: 398px;
-    border-radius: 50%;  
+    border-radius: 50%;
+    padding: 5px; 
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        width: 133px;
+        height: 133px;
+        margin-bottom: 13px;
+    }
 `;
 
 export const TextContainer = styled.div`
@@ -20,6 +31,11 @@ export const TextContainer = styled.div`
     text-align: left;
     flex-direction: column;
     justify-content: center;
+
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        flex-wrap:wrap;
+        margin-left: 0;
+    }
 `;
 
 export const ThisIs = styled.p`
