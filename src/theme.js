@@ -10,6 +10,7 @@ export const theme = {
     },
 
     breakpoints:{
+        large: 991,
         mobile: 767,
     },
 
