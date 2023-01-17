@@ -67,10 +67,10 @@ export const Li = styled.li`
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 140%;
+    line-height: 1.4;
     letter-spacing: 0.05em;
     text-align: left;
-
+    
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         font-size: 14px;
     }
