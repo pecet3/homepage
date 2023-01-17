@@ -7,9 +7,16 @@ export const Wrapper = styled.div`
     display: grid;
     grid-template-columns: auto auto auto;
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({theme})=> theme.breakpoints.large}px){
         grid-template-columns: auto auto;
         margin-top: 32px;
+        margin-bottom: 0px;
+    }
+
+    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+        grid-template-columns: auto auto;
+        margin-top: 32px;
+        margin-bottom: 72px;
     }
 `;
 
@@ -18,10 +25,14 @@ export const Photo = styled.img`
     height: 398px;
     border-radius: 50%;
     padding: 5px; 
-    
+
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         width: 133px;
         height: 133px;
+        margin-bottom: 13px;
+    }
+
+    @media (max-width:${({theme})=> theme.breakpoints.large}px){
         margin-bottom: 13px;
     }
 `;
@@ -35,6 +46,11 @@ export const TextContainer = styled.div`
     
 
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        margin-left: 0;
+    }
+    @media (max-width:${({theme})=> theme.breakpoints.large}px){
         grid-column-start: 1;
         grid-column-end: span 2;
         margin-left: 0;
@@ -56,7 +72,12 @@ export const MyName = styled.h1`
     font-size: 38px;
     line-height: 46px;
     letter-spacing: 0.05em;
-    margin: 0 0 35px 0 ;
+    margin: 0 0 36px 0 ;
+
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        font-size: 22px;
+        margin: 0 0 16px 0 ;
+    }
 `;
 
 export const About = styled.p`
@@ -68,6 +89,11 @@ export const About = styled.p`
     letter-spacing: 0.05em;
     margin: 0 0 32px 0 ;
     color: ${({ theme }) => theme.colors.slateGray};
+
+    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+        font-size: 17px;
+        margin: 0 0 24px 0 ;
+    }
 `;
 
 export const HireMe = styled.a`
@@ -79,7 +105,7 @@ export const HireMe = styled.a`
     letter-spacing: 0.05em;
     font-style: normal;
     font-weight: 600;
-    font-size: 20.0584px;
+    font-size: 20px;
     line-height: 24px;
     border-radius: 4px;
     border: 1px solid ${({ theme }) => theme.colors.iron + 30};
@@ -89,6 +115,7 @@ export const HireMe = styled.a`
     grid-template-columns: 1fr auto;
     align-items: center;
     
+    margin-bottom: 0px;
 `;
 
 export const HireMeIcon = styled.img``;

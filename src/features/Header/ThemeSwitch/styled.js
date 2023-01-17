@@ -7,11 +7,15 @@ export const Wrapper = styled.div`
     align-items: center;
     order: 2;
 
+    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+        order: 0;
+        justify-self: flex-end;
+    }
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         order: 0;
         justify-self: flex-end;
     }
-    
+
 `;
 
 export const DarkModeInfo = styled.p`
@@ -22,6 +26,7 @@ export const DarkModeInfo = styled.p`
     color: ${({ theme }) => theme.colors.slateGray};
     padding: 5px 0;
     text-transform: uppercase;
+    
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         display:none;
     }
