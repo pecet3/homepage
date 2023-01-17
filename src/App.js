@@ -1,12 +1,16 @@
-import { Section } from './common/Section';
+import { List } from './common/List';
 import { Header } from './features/Header';
 
 function App() {
   return (
     <>
       <Header />
-      <Section
+      <List
         title="My skillset includes"
+        isSkillset="true"
+      />
+      <List
+        title="What I want to learn next"
       />
     </>
   );
