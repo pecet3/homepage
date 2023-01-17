@@ -9,6 +9,7 @@ export const Wrapper = styled.div`
 
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         order: 0;
+        justify-self: flex-end;
     }
     
 `;

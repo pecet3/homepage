@@ -18,6 +18,7 @@ export const Photo = styled.img`
     height: 398px;
     border-radius: 50%;
     padding: 5px; 
+    
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         width: 133px;
         height: 133px;
@@ -31,9 +32,11 @@ export const TextContainer = styled.div`
     text-align: left;
     flex-direction: column;
     justify-content: center;
+    
 
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
-        flex-wrap:wrap;
+        grid-column-start: 1;
+        grid-column-end: span 2;
         margin-left: 0;
     }
 `;
@@ -57,6 +60,7 @@ export const MyName = styled.h1`
 `;
 
 export const About = styled.p`
+    text-overflow: clip;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
