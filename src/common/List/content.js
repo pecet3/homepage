@@ -2,7 +2,7 @@ export const skillset = [
     "Semantic & accessible HTML",
     "Basics of CSS 3",
     "JavaScript ES6+",
-    "Git",
+    "Git / GitHub",
     "CSS BEM convention",
     "React.js",
     "Scrum",
@@ -12,7 +12,7 @@ export const skillset = [
     "CSS Grid",
     "Redux-Saga",
     "Markdown",
-    "GitHub Pull Requests & Review",
+    "styled-components",
     "React Router",
 ];
 
