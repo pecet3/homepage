@@ -11,7 +11,7 @@ import {
     HireMe,
     HireMeIcon,
 } from "./styled";
-import { ThemeSwith } from "./ThemeSwitch";
+import { ThemeSwith } from "../ThemeSwitch";
 export const Header = () => {
     return (
         <>
@@ -26,7 +26,7 @@ export const Header = () => {
                             aut voluptatum placeat qui dolorem voluptas ea voluptates minima
                             et velit itaque qui dolores quae.
                         </About>
-                        <HireMe href={`mailto:${email}`}>
+                        <HireMe href={`mailto:${email}`} title="jakub@pacewicze.pl">
                             <HireMeIcon src={hireMeIcon} alt="send me e-mail" />
                             Hire me
                         </HireMe>
