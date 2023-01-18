@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
     display: flex;
@@ -33,7 +33,7 @@ export const DarkModeInfo = styled.p`
 `;
 
 export const Switch = styled.div`
-    width: 47px;
+    width: 48px;
     height: 25px;
     border-radius: 25%/50%;
     background-color: ${({ theme }) => theme.colors.iron};
@@ -46,6 +46,7 @@ export const Switch = styled.div`
     &:hover{
         cursor: pointer;
     }
+    
 `;
 
 export const SwitchElement = styled.img`
@@ -54,4 +55,10 @@ export const SwitchElement = styled.img`
     height: 20px;
     width: 20px;
     padding: 3px;
+    transition: .5s;
+
+    ${({ isDarkTheme})=> isDarkTheme && css`
+        transform: translate(22px);
+        
+    `};
 `;
