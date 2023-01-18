@@ -108,14 +108,19 @@ export const HireMe = styled.a`
     font-size: 20px;
     line-height: 24px;
     border-radius: 4px;
-    border: 1px solid ${({ theme }) => theme.colors.iron + 30};
+    outline: 1px solid ${({ theme }) => theme.colors.scienceBlue + 130};
     text-decoration: none;
     padding: 12px 16px;
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    
     margin-bottom: 0px;
+    transition: .3s;
+
+    &:hover{
+        transform: scale(1.04);
+        filter: brightness(105%);
+    }
 `;
 
 export const HireMeIcon = styled.img``;
