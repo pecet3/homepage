@@ -23,7 +23,7 @@ export const DarkModeInfo = styled.p`
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.elementColors.text};
     padding: 5px 0;
     text-transform: uppercase;
     
@@ -36,8 +36,8 @@ export const Switch = styled.div`
     width: 48px;
     height: 25px;
     border-radius: 25%/50%;
-    background-color: ${({ theme }) => theme.colors.iron};
-    border: 1px solid ${({ theme }) => theme.colors.slateGray};
+    background-color: ${({ theme }) => theme.elementColors.switchBackground};
+    border: 1px solid ${({ theme }) => theme.elementColors.switch};
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -50,7 +50,7 @@ export const Switch = styled.div`
 `;
 
 export const SwitchElement = styled.img`
-    background-color: ${({ theme }) => theme.colors.slateGray};
+    background-color: ${({ theme }) => theme.elementColors.switch};
     border-radius: 50%;
     height: 20px;
     width: 20px;

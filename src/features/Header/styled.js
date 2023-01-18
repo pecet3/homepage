@@ -61,7 +61,7 @@ export const ThisIs = styled.p`
     font-weight: 700;
     font-size: 12px;
     line-height: 130%;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.elementColors.text};
     text-transform: uppercase;
     margin: 0 0 12px 0 ;
 `;
@@ -73,6 +73,7 @@ export const MyName = styled.h1`
     line-height: 46px;
     letter-spacing: 0.05em;
     margin: 0 0 36px 0 ;
+    color: ${({theme})=> theme.elementColors.textImportant};
 
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         font-size: 22px;
@@ -88,7 +89,7 @@ export const About = styled.p`
     line-height: 140%;
     letter-spacing: 0.05em;
     margin: 0 0 32px 0 ;
-    color: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.elementColors.text};
 
     @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
         font-size: 17px;
