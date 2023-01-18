@@ -1,4 +1,5 @@
 import { List } from './common/List';
+import { Portfolio } from './features/Portfolio';
 import { Header } from './features/Header';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       <List
         title="What I want to learn next"
       />
+      <Portfolio />
     </>
   );
 }
