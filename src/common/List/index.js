@@ -3,6 +3,7 @@ import { Wrapper, Title, TitleIcon, Ul, Li, Dot } from "./styled";
 
 
 export const List = ({ title, isSkillset }) => {
+    const getListElement = element => <Li key={element}><Dot>•</Dot>{element}</Li>
     return (
         <>
             <Wrapper>
@@ -15,8 +16,8 @@ export const List = ({ title, isSkillset }) => {
                 </Title>
                 <Ul>
                     {isSkillset
-                        ? skillset.map(element => <Li key={element}><Dot>•</Dot>{element}</Li>)
-                        : nextToLearn.map(element => <Li key={element}><Dot>•</Dot>{element}</Li>)}
+                        ? skillset.map(getListElement)
+                        : nextToLearn.map(getListElement)}
                 </Ul>
             </Wrapper>
         </>
