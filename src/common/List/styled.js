@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { boxShadow } from "../boxShadow";
+import { borderRadius, boxShadow } from "../propsCSS";
 
 export const Wrapper = styled.div`
     margin-top: 119px;
     margin-bottom: 72px;
     max-width: 1200px;
     background-color: ${({ theme }) => theme.elementColors.tileBackground}; 
-    border-radius: 4px;
+    border-radius: ${borderRadius};
     padding: 32px;
     box-shadow: ${boxShadow};
 
@@ -26,7 +26,7 @@ export const Title = styled.h2`
     font-size: 30px;
     line-height: 36px;
     letter-spacing: 0.05em;
-    border-bottom: 1px solid ${({ theme }) => theme.elementColors.underline};
+    border-bottom: 1px solid ${({ theme }) => theme.elementColors.line};
     grid-column-start: 1;
     grid-column-end: -1;
     display:flex;
