@@ -7,11 +7,11 @@ export const Wrapper = styled.div`
     align-items: center;
     order: 2;
 
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         order: 0;
         justify-self: flex-end;
     }
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         order: 0;
         justify-self: flex-end;
     }
@@ -27,7 +27,7 @@ export const DarkModeInfo = styled.p`
     padding: 5px 0;
     text-transform: uppercase;
     
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         display:none;
     }
 `;
@@ -46,6 +46,13 @@ export const Switch = styled.div`
     &:hover{
         cursor: pointer;
     }
+
+    ${({ isDarkTheme }) => isDarkTheme && css`
+
+        @media (max-width:${({ theme }) => theme.breakpoints.large}px){
+            justify-content: flex-end;
+        }
+    `};
     
 `;
 
@@ -57,8 +64,11 @@ export const SwitchElement = styled.img`
     padding: 3px;
     transition: .5s;
 
-    ${({ isDarkTheme})=> isDarkTheme && css`
+    ${({ isDarkTheme }) => isDarkTheme && css`
         transform: translate(22px);
-        
+
+        @media (max-width:${({ theme }) => theme.breakpoints.large}px){
+            transform: translate(0px);
+        }
     `};
 `;
