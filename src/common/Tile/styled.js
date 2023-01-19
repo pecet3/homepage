@@ -9,6 +9,10 @@ export const Wrapper = styled.div`
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         grid-template-columns: 1fr;
     }
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
+        gap: 16px;
+    }
+    
 `;
 
 export const Container = styled.div`
@@ -25,6 +29,16 @@ export const Container = styled.div`
     box-shadow: ${boxShadow};
     border: 6px solid ${({ theme }) => theme.elementColors.line};
     border-radius: ${borderRadius};
+
+    
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+        font-size: 14px;
+    }
+
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
+        margin-bottom: 16px;
+        padding: 24px;
+    }
 `;
 
 export const Header = styled.h3`
@@ -32,6 +46,11 @@ export const Header = styled.h3`
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
+    margin: 0;
+    
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+        font-size: 16px;
+    }
 `;
 
 export const Description = styled.p`
