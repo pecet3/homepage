@@ -1,5 +1,5 @@
 import { Tile } from "../../common/Tile";
-import { Description, Header, Icon, TileContainer } from "./styled";
+import { Description, Header, Icon } from "./styled";
 
 export const Portfolio = () => {
 
@@ -8,9 +8,9 @@ export const Portfolio = () => {
             <Icon />
             <Header>Portfolio</Header>
             <Description>My recent project</Description>
-            <TileContainer>
-                <Tile />
-            </TileContainer>
+
+            <Tile />
+
         </>
     )
 };

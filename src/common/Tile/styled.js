@@ -2,6 +2,16 @@ import styled from "styled-components";
 import { borderRadius, boxShadow } from "../propsCSS";
 
 export const Wrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+        grid-template-columns: 1fr;
+    }
+`;
+
+export const Container = styled.div`
     background-color: ${({ theme }) => theme.elementColors.tileBackground};
     color: ${({ theme }) => theme.elementColors.text};
     padding: 56px;
