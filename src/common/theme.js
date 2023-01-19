@@ -8,20 +8,20 @@ const colors = {
     scienceBlue: "#0366D6",
 };
 
-const breakpoints ={
+const breakpoints = {
     large: 991,
     mobile: 767,
 };
 
 export const theme = {
-    elementColors:{
+    elementColors: {
         tileBackground: colors.white,
         textImportant: colors.mineShaft,
         text: colors.slateGray,
         dot: colors.scienceBlue,
         portfolioHeader: colors.scienceBlue,
         button: colors.scienceBlue,
-        underline: colors.slateGray + 30,
+        line: colors.slateGray + 30,
         switchBackground: colors.iron,
         switch: colors.slateGray,
         icon: colors.scienceBlue,
