@@ -21,6 +21,6 @@ export const nextToLearn = [
     "Node.js",
     "React Native",
     "Express.js",
-    "Networking",
+    "Basics of Networking",
     "SQL",
 ];
