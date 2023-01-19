@@ -17,5 +17,20 @@ export const Header = styled.h2`
 `;
 
 export const Description = styled.p`
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: 0.05em;
+    margin: 0 0 24px 0;
+`;
+
+export const TileContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
     
+    @media (max-width:${({theme})=>theme.breakpoints.mobile}px){
+        grid-template-columns: 1fr;
+    }
 `;
