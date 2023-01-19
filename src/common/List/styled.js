@@ -1,15 +1,16 @@
 import styled from "styled-components";
+import { boxShadow } from "../boxShadow";
 
 export const Wrapper = styled.div`
     margin-top: 119px;
     margin-bottom: 72px;
     max-width: 1200px;
-    background-color: ${({ theme }) => theme.elementColors.background}; 
+    background-color: ${({ theme }) => theme.elementColors.tileBackground}; 
     border-radius: 4px;
     padding: 32px;
-    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03);
+    box-shadow: ${boxShadow};
 
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         padding: 16px;
         margin-top: 48px;
         margin-bottom: 50px;
@@ -31,7 +32,7 @@ export const Title = styled.h2`
     display:flex;
     color: ${({ theme }) => theme.elementColors.textImportant};
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         font-size: 18px;
     }
 `;
@@ -48,11 +49,11 @@ export const Ul = styled.ul`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         grid-template-columns: 1fr 1fr;
     }
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         grid-template-columns: 1fr;
     }
 `;
@@ -72,7 +73,7 @@ export const Li = styled.li`
     letter-spacing: 0.05em;
     text-align: left;
     
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         font-size: 14px;
     }
 `;
