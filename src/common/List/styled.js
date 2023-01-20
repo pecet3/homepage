@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import { borderRadius, boxShadow } from "../propsCSS";
 
 export const Wrapper = styled.div`
     margin-top: 119px;
     margin-bottom: 72px;
     max-width: 1200px;
     background-color: ${({ theme }) => theme.elementColors.tileBackground}; 
-    border-radius: ${borderRadius};
+    border-radius: ${({ theme }) => theme.props.borderRadius};
     padding: 32px;
-    box-shadow: ${boxShadow};
+    box-shadow: ${({ theme }) => theme.props.boxShadow};
 
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         padding: 16px;
@@ -41,6 +40,10 @@ export const TitleIcon = styled.a`
     align-self: center;
     font-size: 24px;
     padding-left: 16px;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+        font-size: 18px;
+    }
 `;
 
 export const Ul = styled.ul`

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { borderRadius, boxShadow } from "../propsCSS";
 
 export const Wrapper = styled.div`
     display: grid;
@@ -26,10 +25,13 @@ export const Container = styled.div`
     line-height: 140%;
     letter-spacing: 0.05em;
     margin: 0 0 24px 0;
-    box-shadow: ${boxShadow};
+    box-shadow: ${({ theme }) => theme.props.boxShadow};
     border: 6px solid ${({ theme }) => theme.elementColors.line};
-    border-radius: ${borderRadius};
+    border-radius: ${({ theme }) => theme.props.borderRadius};
 
+    &:hover{
+        border-color: ${({ theme }) => theme.colors.scienceBlue + 70};
+    }
     
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         font-size: 14px;
