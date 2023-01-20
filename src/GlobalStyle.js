@@ -11,13 +11,10 @@ export const GlobalStyle = createGlobalStyle`
         }
 
     body {
-        max-width: 1216px;
-        text-align: center;
-        margin: 0 auto;
+        margin: 0;
         font-family: 'Inter', sans-serif;
-        color: ${({theme})=> theme.colors.mineShaft};
-        background-color: ${({theme})=> theme.colors.athensGray};
-        padding: 0 8px;
+        color: ${({ theme }) => theme.colors.mineShaft};
+        
     }    
     
 `;

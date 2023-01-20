@@ -1,22 +1,20 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    margin-top: 119px;
+    
     margin-bottom: 72px;
     max-width: 1200px;
     display: grid;
     grid-template-columns: auto auto auto;
 
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         grid-template-columns: auto auto;
-        margin-top: 32px;
         margin-bottom: 0px;
     }
 
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         grid-template-columns: auto auto;
-        margin-top: 32px;
-        margin-bottom: 72px;
+        margin-bottom: 0px;
     }
 `;
 
@@ -26,13 +24,13 @@ export const Photo = styled.img`
     border-radius: 50%;
     padding: 5px; 
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         width: 133px;
         height: 133px;
         margin-bottom: 13px;
     }
 
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         margin-bottom: 13px;
     }
 `;
@@ -45,12 +43,12 @@ export const TextContainer = styled.div`
     justify-content: center;
     
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         grid-column-start: 1;
         grid-column-end: span 2;
         margin-left: 0;
     }
-    @media (max-width:${({theme})=> theme.breakpoints.large}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         grid-column-start: 1;
         grid-column-end: span 2;
         margin-left: 0;
@@ -73,9 +71,9 @@ export const MyName = styled.h1`
     line-height: 46px;
     letter-spacing: 0.05em;
     margin: 0 0 36px 0 ;
-    color: ${({theme})=> theme.elementColors.textImportant};
+    color: ${({ theme }) => theme.elementColors.textImportant};
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         font-size: 22px;
         margin: 0 0 16px 0 ;
     }
@@ -91,7 +89,7 @@ export const About = styled.p`
     margin: 0 0 32px 0 ;
     color: ${({ theme }) => theme.elementColors.text};
 
-    @media (max-width:${({theme})=> theme.breakpoints.mobile}px){
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         font-size: 17px;
         margin: 0 0 24px 0 ;
     }
