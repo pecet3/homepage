@@ -1,4 +1,4 @@
-export const skillset = [
+const skillset = [
     "Semantic & accessible HTML",
     "Basics of CSS 3",
     "JavaScript ES6+",
@@ -16,7 +16,7 @@ export const skillset = [
     "React Router",
 ];
 
-export const nextToLearn = [
+const nextToLearn = [
     "TypeScript",
     "Node.js",
     "React Native",
@@ -24,3 +24,16 @@ export const nextToLearn = [
     "Basics of Networking",
     "SQL",
 ];
+
+export const listContent = [
+    {
+        title: "My skillset includes",
+        content: skillset,
+        icon: "🛠️",
+    },
+    {
+        title: "What I want to learn next",
+        content: nextToLearn,
+        icon: "🚀",
+    },
+]

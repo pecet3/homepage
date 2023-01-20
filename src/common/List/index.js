@@ -1,23 +1,18 @@
-import { skillset, nextToLearn } from "./content";
 import { Wrapper, Title, TitleIcon, Ul, Li, Dot } from "./styled";
 
 
-export const List = ({ title, isSkillset }) => {
+export const List = ({ title, icon, list }) => {
     const getListElement = element => <Li key={element}><Dot>•</Dot>{element}</Li>
     return (
         <>
             <Wrapper>
                 <Title>{title}
                     <TitleIcon>
-                        {isSkillset
-                            ? "🛠️"
-                            : "🚀"}
+                        {icon}
                     </TitleIcon>
                 </Title>
                 <Ul>
-                    {isSkillset
-                        ? skillset.map(getListElement)
-                        : nextToLearn.map(getListElement)}
+                    {list.map(getListElement)}
                 </Ul>
             </Wrapper>
         </>
