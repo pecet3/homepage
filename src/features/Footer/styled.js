@@ -58,10 +58,11 @@ export const Content = styled.p`
 export const IconsContainer = styled.div`
     display: flex;
     gap: 24px;
-    margin: 56px 0 110px 0;
+    margin: 56px 0 0 0;
 
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
-        margin: 40px 0 30px 0;
+        margin: 40px 0 0 0;
+        gap: 16px;
     }
 `;
 
@@ -74,10 +75,11 @@ export const Link = styled.a`
 export const StyledIcon = (icon) => styled(icon)`  
     width: 48px;
     height: 48px;
+    fill: ${({ theme }) => theme.elementColors.icon};
     transition: fill .3s;
     
     &:hover{
-        fill: ${({ theme }) => theme.colors.scienceBlue};
+        fill: ${({ theme }) => theme.elementColors.iconHover};
     }
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         width: 32px;
