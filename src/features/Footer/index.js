@@ -1,8 +1,6 @@
-import { discord, email, facebook, github } from "../../common/personalInfo";
-import githubIcon from "../../common/mediaIcons/github.svg";
-import discordIcon from "../../common/mediaIcons/discord.png";
-import facebookIcon from "../../common/mediaIcons/facebook.svg";
-import { Title, Wrapper, Content, IconsContainer, Link, Icon, Header } from "./styled";
+import { email } from "../../common/personalInfo";
+import { socialMedia } from "./socialMedia";
+import { Title, Wrapper, Content, IconsContainer, Link, Header } from "./styled";
 export const Footer = () => {
     return (
         <>
@@ -15,9 +13,13 @@ export const Footer = () => {
                     ea voluptates minima et velit itaque qui dolores quae.
                 </Content>
                 <IconsContainer>
-                    <Link href={github}><Icon src={githubIcon} alt="my github" /></Link>
-                    <Link href={discord}><Icon src={discordIcon} alt="my discord" /></Link>
-                    <Link href={facebook}><Icon src={facebookIcon} alt="my facebook" /></Link>
+                    {socialMedia.map(({ name, Icon, link }) =>
+                        <Link
+                            key={name}
+                            href={link} target="_blank">
+                            <Icon />
+                        </Link>
+                    )}
                 </IconsContainer>
             </Wrapper>
         </>
