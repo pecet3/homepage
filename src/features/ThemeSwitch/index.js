@@ -6,14 +6,17 @@ import {
 } from "./styled.js";
 import switchBright from "./images/switchBright.svg";
 import switchDark from "./images/switchDark.svg";
-import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
+import { selectIsDarkTheme, toggleIsDarkTheme } from "../../common/theme/themeSlice.js";
 
 export const ThemeSwith = () => {
-    const [isDarkTheme, setIsDarkTheme] = useState(false);
+    const dispatch = useDispatch();
+    const isDarkTheme = useSelector(selectIsDarkTheme);
     return (
         <Wrapper>
             <DarkModeInfo>Dark Mode Off</DarkModeInfo>
-            <Switch onClick={() => setIsDarkTheme(!isDarkTheme)} isDarkTheme={isDarkTheme}>
+            <Switch onClick={() => dispatch(toggleIsDarkTheme())} isDarkTheme={isDarkTheme}>
                 <SwitchElement src={
                     isDarkTheme
                         ? switchDark
