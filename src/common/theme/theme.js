@@ -6,6 +6,7 @@ const colors = {
     athensGray: "#F0F2F5",
     white: "#FFFFFF",
     scienceBlue: "#0366D6",
+    dodgerBlue: "#2688F7",
 };
 
 const breakpoints = {
@@ -20,6 +21,7 @@ const props = {
 
 export const theme = {
     elementColors: {
+        background: colors.athensGray,
         tileBackground: colors.white,
         textImportant: colors.mineShaft,
         text: colors.slateGray,
@@ -29,7 +31,29 @@ export const theme = {
         line: colors.slateGray + 30,
         switchBackground: colors.iron,
         switch: colors.slateGray,
+        icon: colors.mineShaft,
+        iconHover: colors.scienceBlue,
+        footerIcon: colors.mineShaft,
+    },
+    colors,
+    breakpoints,
+    props,
+};
+
+export const darkTheme = {
+    elementColors: {
+        background: colors.mineShaft,
+        tileBackground: colors.slateGray + 40,
+        textImportant: colors.white,
+        text: colors.white,
+        dot: colors.scienceBlue,
+        portfolioHeader: colors.scienceBlue,
+        button: colors.scienceBlue,
+        line: colors.slateGray + 30,
+        switchBackground: colors.slateGray,
+        switch: colors.white,
         icon: colors.scienceBlue,
+        iconHover: colors.dodgerBlue,
         footerIcon: colors.mineShaft,
     },
     colors,
