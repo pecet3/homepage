@@ -1,26 +1,24 @@
-import { List } from './common/List';
-import { Portfolio } from './features/Portfolio';
-import { Header } from './features/Header';
-import { Footer } from './features/Footer';
-import { listContent } from './common/List/content';
-import { nanoid } from 'nanoid';
+
+import { useSelector } from "react-redux";
+import { ThemeProvider } from "styled-components";
+import { darkTheme, theme } from "./common/theme/theme";
+import { selectIsDarkTheme } from "./common/theme/themeSlice";
+import { GlobalStyle } from "./GlobalStyle";
+import Homepage from "./Homepage";
+import { Wrapper } from "./styled";
+
 
 function App() {
-  return (
-    <>
-      <Header />
-      {listContent.map(({ content, icon, title }) => (
-        <List
-          title={title}
-          list={content}
-          icon={icon}
-          key={nanoid()}
-        />
-      ))}
-      <Portfolio />
-      <Footer />
-    </>
-  );
-}
+    const isDarkTheme = useSelector(selectIsDarkTheme);
+    return (
+        <ThemeProvider theme={isDarkTheme ? darkTheme : theme}>
+            <GlobalStyle />
+            <Wrapper>
+                <Homepage />
+            </Wrapper>
+
+        </ThemeProvider>
+    )
+};
 
 export default App;
