@@ -13,6 +13,11 @@ const breakpoints = {
     mobile: 767,
 };
 
+const props = {
+    boxShadow: "0px -2px 50px rgba(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
+    borderRadius: "4px",
+}
+
 export const theme = {
     elementColors: {
         tileBackground: colors.white,
@@ -29,4 +34,5 @@ export const theme = {
     },
     colors,
     breakpoints,
+    props,
 };
