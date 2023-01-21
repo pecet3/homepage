@@ -15,7 +15,7 @@ export const ThemeSwith = () => {
     const isDarkTheme = useSelector(selectIsDarkTheme);
     return (
         <Wrapper>
-            <DarkModeInfo>Dark Mode Off</DarkModeInfo>
+            <DarkModeInfo>Dark Mode {isDarkTheme ? "On" : "Off"}</DarkModeInfo>
             <Switch onClick={() => dispatch(toggleIsDarkTheme())} isDarkTheme={isDarkTheme}>
                 <SwitchElement src={
                     isDarkTheme
