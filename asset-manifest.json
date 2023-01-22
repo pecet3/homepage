@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/homepage/static/js/main.5af690f9.js",
+    "main.js": "/homepage/static/js/main.aa9f0840.js",
     "static/js/787.162bc9a0.chunk.js": "/homepage/static/js/787.162bc9a0.chunk.js",
     "static/media/headerPhoto.jpg": "/homepage/static/media/headerPhoto.9edfc17ea5a5c86c10ab.jpg",
     "static/media/switchDark.svg": "/homepage/static/media/switchDark.0ab465bbe34ac1ab6408f68f17fede2d.svg",
@@ -12,10 +12,11 @@
     "static/media/errorBright.svg": "/homepage/static/media/errorBright.a713ca8752dc53fb52f84490e49aabe3.svg",
     "static/media/hireMeIcon.svg": "/homepage/static/media/hireMeIcon.1e6910b92e8cbdd0dbea350b3654fe18.svg",
     "static/media/facebook.svg": "/homepage/static/media/facebook.8dffcd1c6f859e725ca42766eacf9e83.svg",
-    "main.5af690f9.js.map": "/homepage/static/js/main.5af690f9.js.map",
+    "static/media/spinner.svg": "/homepage/static/media/spinner.f0cf9f6aef365567ad9b9a0d34b8b760.svg",
+    "main.aa9f0840.js.map": "/homepage/static/js/main.aa9f0840.js.map",
     "787.162bc9a0.chunk.js.map": "/homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.5af690f9.js"
+    "static/js/main.aa9f0840.js"
   ]
 }
