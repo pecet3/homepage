@@ -11,8 +11,7 @@ export const Error = () => {
             <Icon src={isDarkTheme ? errorDark : errorBright} alt="" />
             <Header>Ooops! Something went wrong... </Header>
             <Content>
-                Sorry, failed to load Github projects.
-                You can check them directly on Github.
+                Sorry, failed to load Github projects. You<br /> can check them directly on Github.
             </Content>
             <Button><Link href={github} target="_blank">Go to Github</Link></Button>
         </Wrapper>
