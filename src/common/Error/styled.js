@@ -7,6 +7,13 @@ export const Wrapper = styled.div`
     justify-content: center;
     flex-direction: column;
     display: flex;
+
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
+        margin: 40px 0 70px 0;
+    }
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+        font-size: 16px;
+    }
 `;
 
 export const Icon = styled.img`
