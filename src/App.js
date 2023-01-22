@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "./common/theme/theme";
 import { selectIsDarkTheme } from "./common/theme/themeSlice";
 import { GlobalStyle } from "./GlobalStyle";
-import Homepage from "./Homepage";
+import Homepage from "./features/Homepage";
 import { Wrapper } from "./styled";
 
 

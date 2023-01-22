@@ -1,8 +1,8 @@
-import { List } from './common/List';
-import { Portfolio } from './features/Portfolio';
-import { Header } from './features/Header';
-import { Footer } from './features/Footer';
-import { listContent } from './common/List/content';
+import { List } from '../common/List';
+import { Portfolio } from './Portfolio';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { listContent } from '../common/List/content';
 import { nanoid } from 'nanoid';
 import { HomepageWrapper } from './styled';
 
