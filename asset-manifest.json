@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.js": "/personalHomepage/static/js/main.21d43c45.js",
-    "static/js/787.162bc9a0.chunk.js": "/personalHomepage/static/js/787.162bc9a0.chunk.js",
-    "static/media/headerPhoto.jpg": "/personalHomepage/static/media/headerPhoto.9edfc17ea5a5c86c10ab.jpg",
-    "static/media/switchDark.svg": "/personalHomepage/static/media/switchDark.0ab465bbe34ac1ab6408f68f17fede2d.svg",
-    "static/media/switchBright.svg": "/personalHomepage/static/media/switchBright.c109cad4dc16ad4e08e7491cc0cf8b90.svg",
-    "static/media/github.svg": "/personalHomepage/static/media/github.e6f3340c210bab781693b3973624fd54.svg",
-    "index.html": "/personalHomepage/index.html",
-    "static/media/discord.svg": "/personalHomepage/static/media/discord.b0a6f3bfa7a8f73976a9614ecaefc4fe.svg",
-    "static/media/hireMeIcon.svg": "/personalHomepage/static/media/hireMeIcon.1e6910b92e8cbdd0dbea350b3654fe18.svg",
-    "static/media/facebook.svg": "/personalHomepage/static/media/facebook.8dffcd1c6f859e725ca42766eacf9e83.svg",
-    "main.21d43c45.js.map": "/personalHomepage/static/js/main.21d43c45.js.map",
-    "787.162bc9a0.chunk.js.map": "/personalHomepage/static/js/787.162bc9a0.chunk.js.map"
+    "main.js": "/homepage/static/js/main.5af690f9.js",
+    "static/js/787.162bc9a0.chunk.js": "/homepage/static/js/787.162bc9a0.chunk.js",
+    "static/media/headerPhoto.jpg": "/homepage/static/media/headerPhoto.9edfc17ea5a5c86c10ab.jpg",
+    "static/media/switchDark.svg": "/homepage/static/media/switchDark.0ab465bbe34ac1ab6408f68f17fede2d.svg",
+    "static/media/switchBright.svg": "/homepage/static/media/switchBright.c109cad4dc16ad4e08e7491cc0cf8b90.svg",
+    "static/media/github.svg": "/homepage/static/media/github.e6f3340c210bab781693b3973624fd54.svg",
+    "index.html": "/homepage/index.html",
+    "static/media/discord.svg": "/homepage/static/media/discord.b0a6f3bfa7a8f73976a9614ecaefc4fe.svg",
+    "static/media/errorDark.svg": "/homepage/static/media/errorDark.90f9133222a1811ba69ebabf66bbc6cd.svg",
+    "static/media/errorBright.svg": "/homepage/static/media/errorBright.a713ca8752dc53fb52f84490e49aabe3.svg",
+    "static/media/hireMeIcon.svg": "/homepage/static/media/hireMeIcon.1e6910b92e8cbdd0dbea350b3654fe18.svg",
+    "static/media/facebook.svg": "/homepage/static/media/facebook.8dffcd1c6f859e725ca42766eacf9e83.svg",
+    "main.5af690f9.js.map": "/homepage/static/js/main.5af690f9.js.map",
+    "787.162bc9a0.chunk.js.map": "/homepage/static/js/787.162bc9a0.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.21d43c45.js"
+    "static/js/main.5af690f9.js"
   ]
 }
