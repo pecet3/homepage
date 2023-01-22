@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as GitHubIcon } from "../../common/mediaIcons/github.svg";
 
 export const Icon = styled(GitHubIcon)`
-    fill: ${({ theme }) => theme.elementColors.icon};
+    fill: ${({ theme }) => theme.colors.scienceBlue};
     margin-bottom: 12px;
 
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
