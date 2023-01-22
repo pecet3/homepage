@@ -5,6 +5,7 @@ import { Footer } from './Footer';
 import { listContent } from '../common/List/content';
 import { nanoid } from 'nanoid';
 import { HomepageWrapper } from './styled';
+import { Error } from '../common/Error';
 
 function Homepage() {
   return (
@@ -20,6 +21,7 @@ function Homepage() {
           />
         ))}
         <Portfolio />
+        <Error />
         <Footer />
       </HomepageWrapper>
     </>
