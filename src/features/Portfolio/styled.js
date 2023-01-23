@@ -1,5 +1,23 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as GitHubIcon } from "../../common/mediaIcons/github.svg";
+
+export const TilesWrapper = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    ${({ notSuccess }) => notSuccess && css`
+        grid-template-columns: auto;
+    `}
+    
+    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+        grid-template-columns: auto;
+    }
+    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
+        gap: 16px;
+    }
+    
+`;
 
 export const Icon = styled(GitHubIcon)`
     fill: ${({ theme }) => theme.colors.scienceBlue};
@@ -41,6 +59,6 @@ export const Description = styled.p`
         font-size: 17px;
     }
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
-        
+        margin: 0 0 48px 0;
     }
 `;
