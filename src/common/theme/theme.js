@@ -47,7 +47,7 @@ export const darkTheme = {
         textImportant: colors.white,
         text: colors.white,
         dot: colors.scienceBlue,
-        portfolioHeader: colors.scienceBlue,
+        portfolioHeader: colors.white,
         button: colors.scienceBlue,
         line: colors.slateGray + 30,
         switchBackground: colors.slateGray,
