@@ -1,9 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
-import { ThemeProvider } from 'styled-components';
 import App from './App';
-import { darkTheme, theme } from './common/theme/theme';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
 
