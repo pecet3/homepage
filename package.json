@@ -2,7 +2,7 @@
   "name": "personal-homepage",
   "version": "0.3.0",
   "private": true,
-  "homepage": "https://pecet3.github.io/personalHomepage/",
+  "homepage": "https://pecet3.github.io/homepage/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.1",
     "@testing-library/jest-dom": "^5.16.5",
