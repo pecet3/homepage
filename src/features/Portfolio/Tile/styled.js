@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     background-color: ${({ theme }) => theme.elementColors.tileBackground};
@@ -14,11 +14,10 @@ export const Container = styled.div`
     box-shadow: ${({ theme }) => theme.props.boxShadow};
     border: 6px solid ${({ theme }) => theme.elementColors.line};
     border-radius: ${({ theme }) => theme.props.borderRadius};
+
     display: flex;
     flex-direction: column;
-    flex-shrink: 1;
     justify-content: space-between;
-
 
     &:hover{
         border-color: ${({ theme }) => theme.colors.scienceBlue + 70};
@@ -29,7 +28,6 @@ export const Container = styled.div`
     }
 
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
-        margin-bottom: 16px;
         padding: 24px;
         text-align: left;
         
@@ -50,17 +48,21 @@ export const Header = styled.h3`
 
 export const Description = styled.p`
     justify-self: flex-end;
+
 `;
 
-export const Details = styled.span`
+export const DetailsWrapper = styled.div`
     margin: 5px 0;
     justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 `;
 
 export const Link = styled.a`
-    color: ${({ theme }) => theme.colors.scienceBlue};
-
+    color: ${({ theme }) => theme.colors.dodgerBlue};
+    font-weight: 600;
     &:visited{
-        color: ${({ theme }) => theme.colors.scienceBlue};
+        color: ${({ theme }) => theme.colors.dodgerBlue};
     }
 `;
