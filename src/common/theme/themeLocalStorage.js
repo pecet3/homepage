@@ -1,6 +1,4 @@
-import { initializeUseSelector } from "react-redux/es/hooks/useSelector";
-
-const localStorageKey = "darkTheme";
+const localStorageKey = "isDarkTheme";
 
 export const saveThemeInLocalStorage = (isDarkTheme) => {
     localStorage.setItem(localStorageKey, isDarkTheme);
