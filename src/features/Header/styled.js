@@ -80,7 +80,6 @@ export const MyName = styled.h1`
 `;
 
 export const About = styled.p`
-    text-overflow: clip;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
