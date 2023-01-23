@@ -1,4 +1,4 @@
-# [Demo](https://pecet3.github.io/personalHomepage/)
+# [Demo](https://pecet3.github.io/homepage/)
 
 # Getting Started with Create React App
 
