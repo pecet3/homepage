@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    
-    @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
-        grid-template-columns: 1fr;
-    }
-    @media (max-width:${({ theme }) => theme.breakpoints.large}px){
-        gap: 16px;
-    }
-    
-`;
-
 export const Container = styled.div`
     background-color: ${({ theme }) => theme.elementColors.tileBackground};
     color: ${({ theme }) => theme.elementColors.text};
@@ -24,10 +10,15 @@ export const Container = styled.div`
     font-size: 18px;
     line-height: 140%;
     letter-spacing: 0.05em;
-    margin: 0 0 24px 0;
+    
     box-shadow: ${({ theme }) => theme.props.boxShadow};
     border: 6px solid ${({ theme }) => theme.elementColors.line};
     border-radius: ${({ theme }) => theme.props.borderRadius};
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    justify-content: space-between;
+
 
     &:hover{
         border-color: ${({ theme }) => theme.colors.scienceBlue + 70};
@@ -40,6 +31,8 @@ export const Container = styled.div`
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         margin-bottom: 16px;
         padding: 24px;
+        text-align: left;
+        
     }
 `;
 
@@ -56,10 +49,12 @@ export const Header = styled.h3`
 `;
 
 export const Description = styled.p`
+    justify-self: flex-end;
 `;
 
-export const Details = styled.p`
-    margin-top: 8px;
+export const Details = styled.span`
+    margin: 5px 0;
+    justify-self: flex-end;
 `;
 
 export const Link = styled.a`

@@ -2,8 +2,9 @@ import { Button, Content, Header, Icon, Wrapper, Link } from "./styled";
 import errorBright from "./errorBright.svg";
 import errorDark from "./errorDark.svg"
 import { useSelector } from "react-redux";
-import { selectIsDarkTheme } from "../theme/themeSlice";
-import { github } from "../personalInfo";
+import { selectIsDarkTheme } from "../../../common/theme/themeSlice";
+import { github } from "../../../common/personalInfo";
+
 export const Error = () => {
     const isDarkTheme = useSelector(selectIsDarkTheme);
     return (
