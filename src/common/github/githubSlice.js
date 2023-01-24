@@ -3,28 +3,50 @@ import { createSlice } from "@reduxjs/toolkit";
 const githubSlice = createSlice({
     name: "github",
     initialState: {
-        status: "loading",
+        reposStatus: "loading",
         repos: [],
+        userStatus: "loading",
+        user: [],
     },
     reducers: {
         fetchRepos: (state) => {
-            state.status = "loading";
+            state.reposStatus = "loading";
         },
         fetchReposSuccess: (state, { payload: repos }) => {
-            state.status = "success";
+            state.reposStatus = "success";
             state.repos = repos;
         },
         fetchReposError: (state) => {
-            state.status = "error";
-        }
+            state.reposStatus = "error";
+        },
+        fetchUser: (state) => {
+            state.userStatus = "loading";
+        },
+        fetchUserSuccess: (state, { payload: user }) => {
+            state.userStatus = "success";
+            state.user = user;
+        },
+        fetchUserError: (state) => {
+            state.userStatus = "error";
+        },
     }
 });
 
-export const { fetchRepos, fetchReposSuccess, fetchReposError } = githubSlice.actions;
+export const { fetchRepos,
+    fetchReposSuccess,
+    fetchReposError,
+    fetchUser,
+    fetchUserSuccess,
+    fetchUserError, } = githubSlice.actions;
 
-export const selectRepos = state => state.github.repos;
-export const selectStatus = state => state.github.status;
-export const selectReposLength = state => state.github.repos.length;
+export const selectGithubState = state => state.github;
+
+export const selectRepos = state => selectGithubState(state).repos;
+export const selectReposStatus = state => selectGithubState(state).reposStatus;
+export const selectReposLength = state => selectGithubState(state).repos.length;
+
+export const selectUser = state => selectGithubState(state).user;
+export const selectUserStatus = state => selectGithubState(state).userStatus;
 
 export default githubSlice.reducer;
 
