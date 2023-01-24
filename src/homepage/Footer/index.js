@@ -6,7 +6,7 @@ export const Footer = () => {
         <>
             <Wrapper>
                 <Title>Let`s Talk</Title>
-                <Header>{email}</Header>
+                <Header><Link href={`mailto:${email}`} title={email}>{email}</Link></Header>
                 <Content>
                     Lorem ipsum dolor sit amet. Sit nemo voluptatum qui nihil
                     error aut voluptatum placeat qui dolorem voluptas
