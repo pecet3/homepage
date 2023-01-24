@@ -4,7 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, theme } from "./common/theme/theme";
 import { selectIsDarkTheme } from "./common/theme/themeSlice";
 import { GlobalStyle } from "./GlobalStyle";
-import Homepage from "./features/Homepage";
+import Homepage from "./homepage";
 import { Wrapper } from "./styled";
 import { useEffect } from "react";
 import { fetchRepos } from "./common/github/githubSlice";

@@ -9,7 +9,7 @@ export const Tile = ({ description, url, gitUrl, name, }) => {
                     {description && description}
                 </Description>
                 <DetailsWrapper>
-                    <Link href={url && url} target="_blank">
+                    <Link href={url && `https://pecet3.github.io/${name}`} target="_blank">
                         Go to the demo
                     </Link>
                     <Link href={gitUrl && gitUrl} target="_blank">
