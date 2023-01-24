@@ -19,6 +19,14 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
 
+    transition: border-color .4s;
+
+    ${({ empty }) => empty && css`
+        @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
+            display: none;
+        }
+    `}
+
     &:hover{
         border-color: ${({ theme }) => theme.colors.scienceBlue + 70};
     }

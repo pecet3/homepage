@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { Error } from "./Error";
-import { selectRepos, selectStatus } from "../../common/github/githubSlice";
+import { selectRepos, selectReposLength, selectStatus } from "../../common/github/githubSlice";
 import { Tile } from "./Tile";
 import { Description, Header, Icon, TilesWrapper } from "./styled";
 import { Loading } from "./Loading";
@@ -8,6 +8,7 @@ import { nanoid } from "nanoid";
 export const Portfolio = () => {
     const status = useSelector(selectStatus);
     const repos = useSelector(selectRepos);
+    const reposLength = useSelector(selectReposLength);
     return (
         <>
             <Icon />
@@ -31,6 +32,7 @@ export const Portfolio = () => {
 
                             : <Error />
                 }
+                {reposLength % 2 === 1 && <Tile empty="true" />}
             </TilesWrapper>
 
         </>
