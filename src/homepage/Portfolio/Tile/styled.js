@@ -36,9 +36,7 @@ export const Container = styled.div`
     }
 
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
-        padding: 24px;
-        text-align: left;
-        
+        padding: 24px;   
     }
 `;
 
