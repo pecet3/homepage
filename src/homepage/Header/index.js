@@ -22,11 +22,9 @@ export const Header = () => {
                     <ThisIs>This is</ThisIs>
                     <MyName>Jakub Pacewicz</MyName>
                     <About>
-                        Lorem ipsum dolor sit amet. Sit nemo voluptatum qui nihil error
-                        aut voluptatum placeat qui dolorem voluptas ea voluptates minima
-                        et velit itaque qui dolores quae.
+                        I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.
                     </About>
-                    <HireMe href={`mailto:${email}`} title="jakub@pacewicze.pl">
+                    <HireMe href={`mailto:${email}`} title={email}>
                         <HireMeIcon src={hireMeIcon} alt="send me e-mail" />
                         Hire me
                     </HireMe>

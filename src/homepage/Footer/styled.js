@@ -54,7 +54,6 @@ export const Content = styled.p`
     }
 `;
 
-
 export const IconsContainer = styled.div`
     display: flex;
     gap: 24px;
@@ -67,9 +66,15 @@ export const IconsContainer = styled.div`
 `;
 
 export const Link = styled.a`
- &:hover{
+    color: ${({ theme }) => theme.elementColors.textImportant};
+    text-decoration: none;
+
+    &:visited{
+        color: ${({ theme }) => theme.elementColors.textImportant};
+    }
+    &:hover{
         fill: ${({ theme }) => theme.colors.scienceBlue};
- }
+    }
 `;
 
 export const StyledIcon = (icon) => styled(icon)`  
