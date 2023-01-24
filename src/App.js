@@ -7,7 +7,7 @@ import { GlobalStyle } from "./GlobalStyle";
 import Homepage from "./homepage";
 import { Wrapper } from "./styled";
 import { useEffect } from "react";
-import { fetchRepos } from "./common/github/githubSlice";
+import { fetchRepos, fetchUser } from "./common/github/githubSlice";
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
 
     useEffect(() => {
         dispatch(fetchRepos());
+        dispatch(fetchUser());
     }, [dispatch])
 
     return (
