@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import {
     Description,
     Header,
@@ -17,10 +17,6 @@ export const StyledContainer = styled(Container)`
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         display: none;   
     }
-
-    ${({ notSuccess }) => notSuccess && css`
-        display: none;
-    `}
 `;
 
 export const StyledHeader = styled(Header)`
@@ -38,11 +34,12 @@ export const StyledDetailsWrapper = styled(DetailsWrapper)`
 `;
 
 export const StyledLink = styled(Link)`
-
+    text-decoration: none;
+    margin: 0;
 `;
 
 export const Avatar = styled.img`
-    border: 1px solid;
+    border: 2px solid ${({ theme }) => theme.colors.scienceBlue};
     border-radius: 50%;
     width: 120px;
     height: 120px;
