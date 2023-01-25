@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
     
@@ -22,7 +22,8 @@ export const Photo = styled.img`
     width: 398px;
     height: 398px;
     border-radius: 50%;
-    padding: 5px; 
+    padding: 5px;
+    
 
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
         width: 133px;
@@ -33,6 +34,10 @@ export const Photo = styled.img`
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         margin-bottom: 13px;
     }
+
+    ${({ darkTheme }) => darkTheme && css`
+        filter: brightness(85%);
+    `};
 `;
 
 export const TextContainer = styled.div`
