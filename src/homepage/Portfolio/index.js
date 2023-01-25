@@ -2,10 +2,11 @@ import { useSelector } from "react-redux";
 import { Error } from "./Error";
 import { selectRepos, selectReposLength, selectReposStatus, selectUser, selectUserStatus } from "../../common/github/githubSlice";
 import { Tile } from "./Tile";
-import { Description, Header, Icon, TilesWrapper } from "./styled";
+import { Description, Header, Icon, Link, TilesWrapper } from "./styled";
 import { Loading } from "./Loading";
 import { nanoid } from "nanoid";
 import { AdditionalTile } from "./AdditionalTile";
+import { github } from "../../common/personalInfo";
 export const Portfolio = () => {
     const reposStatus = useSelector(selectReposStatus);
     const repos = useSelector(selectRepos);
@@ -15,11 +16,11 @@ export const Portfolio = () => {
     const userStatus = useSelector(selectUserStatus);
     return (
         <>
-            <Icon />
+            <Link href={github} target="_blank"><Icon /></Link>
             <Header>Portfolio</Header>
             <Description>My recent project</Description>
 
-            <TilesWrapper notSuccess={reposStatus === "success" ? false : true}>
+            <TilesWrapper notSuccess={reposStatus !== "success" ? true : false}>
                 {
                     reposStatus === "error"
                         ? <Error />
@@ -34,16 +35,20 @@ export const Portfolio = () => {
                                     name={repo.name}
                                 />)
                 }
-                {userStatus === "success" & reposLength % 2 === 1 &&
-                    <AdditionalTile
-                        login={user.login}
-                        avatar={user.avatar_url}
-                        bio={user.bio}
-                        location={user.location}
-                        followers={user.followers}
-                        name={user.name}
-                        following={user.following}
-                    />}
+                {reposLength % 2 === 1 &&
+                    userStatus === "error"
+                    ? <p />
+                    : userStatus === "loading"
+                        ? <p />
+                        : <AdditionalTile
+                            login={user.login}
+                            avatar={user.avatar_url}
+                            bio={user.bio}
+                            location={user.location}
+                            followers={user.followers}
+                            name={user.name}
+                            following={user.following}
+                        />}
             </TilesWrapper>
 
         </>
