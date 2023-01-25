@@ -8,9 +8,9 @@ export const Footer = () => {
                 <Title>Let`s Talk</Title>
                 <Header><Link href={`mailto:${email}`} title={email}>{email}</Link></Header>
                 <Content>
-                    Lorem ipsum dolor sit amet. Sit nemo voluptatum qui nihil
-                    error aut voluptatum placeat qui dolorem voluptas
-                    ea voluptates minima et velit itaque qui dolores quae.
+                    I’m always open to new projects whenever I have the time.
+                    If you have a website, dashboard or mobile app in mind and need some help
+                    to make your ideas come to life, feel free to contact me
                 </Content>
                 <IconsContainer>
                     {socialMedia.map(({ name, Icon, link }) =>
