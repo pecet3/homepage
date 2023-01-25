@@ -62,3 +62,7 @@ export const Description = styled.p`
         margin: 0 0 48px 0;
     }
 `;
+
+export const Link = styled.a`
+    
+`;
