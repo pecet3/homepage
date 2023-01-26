@@ -16,7 +16,8 @@ export const Footer = () => {
                     {socialMedia.map(({ name, Icon, link }) =>
                         <Link
                             key={name}
-                            href={link} target="_blank">
+                            href={link}
+                            target="_blank">
                             <Icon />
                         </Link>
                     )}
