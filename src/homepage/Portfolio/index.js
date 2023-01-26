@@ -1,12 +1,26 @@
 import { useSelector } from "react-redux";
-import { Error } from "./Error";
-import { selectRepos, selectReposLength, selectReposStatus, selectUser, selectUserStatus } from "../../common/github/githubSlice";
 import { Tile } from "./Tile";
-import { Description, Header, Icon, Link, TilesWrapper } from "./styled";
-import { Loading } from "./Loading";
+import { Error } from "./Error";
 import { nanoid } from "nanoid";
+import {
+    selectRepos,
+    selectReposLength,
+    selectReposStatus,
+    selectUser,
+    selectUserStatus
+} from "../../common/github/githubSlice";
+import {
+    Description,
+    Header,
+    Icon,
+    Link,
+    TilesWrapper
+} from "./styled";
+import { Loading } from "./Loading";
 import { AdditionalTile } from "./AdditionalTile";
 import { github } from "../../common/personalInfo";
+
+
 export const Portfolio = () => {
     const reposStatus = useSelector(selectReposStatus);
     const repos = useSelector(selectRepos);
@@ -37,7 +51,7 @@ export const Portfolio = () => {
                 }
                 {reposLength % 2 === 1 &&
                     userStatus === "error"
-                    ? <p />
+                    ? <Tile />
                     : userStatus === "loading"
                         ? <p />
                         : <AdditionalTile
