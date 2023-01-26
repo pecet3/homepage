@@ -9,7 +9,14 @@ import {
     Login
 } from "./styled";
 
-export const AdditionalTile = ({ login, name, avatar, location, bio, followers, following }) => {
+export const AdditionalTile = ({
+    login,
+    name,
+    avatar,
+    location,
+    bio,
+    followers,
+    following }) => {
     return (
         <StyledLink href={github} target="_blank">
             <StyledContainer>
@@ -18,14 +25,20 @@ export const AdditionalTile = ({ login, name, avatar, location, bio, followers, 
                         {name && name}
                         <Login>{login && login}</Login>
                     </div>
-                    <Avatar src={avatar && avatar} alt="avatar on github" />
+                    {avatar && <Avatar src={avatar} alt="avatar on github" />}
                 </StyledHeader>
                 <StyledDescription>
                     {bio && bio}
                 </StyledDescription>
                 <StyledDetailsWrapper>
-                    <StyledLink as="p">📌 {location && location}</StyledLink>
-                    <StyledLink as="p">🧙‍♂️ {followers && followers} followers, {following && following} following</StyledLink>
+                    {location &&
+                        <StyledLink as="p">
+                            📌 {location}
+                        </StyledLink>}
+                    {followers &&
+                        <StyledLink as="p">
+                            🧙‍♂️ {followers} followers, {following && following} following
+                        </StyledLink>}
                 </StyledDetailsWrapper>
             </StyledContainer>
         </StyledLink>
