@@ -68,13 +68,16 @@ export const IconsContainer = styled.div`
 export const Link = styled.a`
     color: ${({ theme }) => theme.elementColors.textImportant};
     text-decoration: none;
+    transition: color .3s;
 
     &:visited{
         color: ${({ theme }) => theme.elementColors.textImportant};
     }
     &:hover{
         fill: ${({ theme }) => theme.colors.scienceBlue};
+        color: ${({ theme }) => theme.colors.scienceBlue};
     }
+
 `;
 
 export const StyledIcon = (icon) => styled(icon)`  
