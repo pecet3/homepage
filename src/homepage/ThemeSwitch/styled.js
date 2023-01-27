@@ -61,10 +61,10 @@ export const SwitchElement = styled.img`
     border-radius: 50%;
     height: 20px;
     width: 20px;
-    padding: 3px;
+    padding: 2px;
     transition: .5s;
 
-    ${({ isDarkTheme }) => isDarkTheme && css`
+    ${({ moveRight }) => moveRight && css`
         transform: translate(22px);
 
         @media (max-width:${({ theme }) => theme.breakpoints.large}px){
