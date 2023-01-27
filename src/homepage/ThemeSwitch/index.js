@@ -16,12 +16,12 @@ export const ThemeSwith = () => {
     return (
         <Wrapper>
             <DarkModeInfo>Dark Mode {isDarkTheme ? "On" : "Off"}</DarkModeInfo>
-            <Switch onClick={() => dispatch(toggleIsDarkTheme())} isDarkTheme={isDarkTheme}>
+            <Switch as="button" onClick={() => dispatch(toggleIsDarkTheme())} isDarkTheme={isDarkTheme}>
                 <SwitchElement src={
                     isDarkTheme
                         ? switchDark
                         : switchBright
-                } alt="Change Theme" isDarkTheme={isDarkTheme}></SwitchElement>
+                } alt="Change Theme" moveRight={isDarkTheme}></SwitchElement>
             </Switch>
         </Wrapper>
     )
