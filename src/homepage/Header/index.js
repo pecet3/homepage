@@ -28,7 +28,7 @@ export const Header = () => {
                         I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.
                     </About>
                     <HireMe href={`mailto:${email}`} title={email}>
-                        <HireMeIcon src={hireMeIcon} alt="send me an e-mail" />
+                        <HireMeIcon src={hireMeIcon} alt="send me an e-mail" autofocus />
                         Hire me
                     </HireMe>
                 </TextContainer>
