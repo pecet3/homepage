@@ -18,7 +18,10 @@ export const AdditionalTile = ({
     followers,
     following }) => {
     return (
-        <StyledLink href={github} target="_blank">
+        <StyledLink
+            href={github}
+            title="Link to my Github profile"
+            target="_blank">
             <StyledContainer>
                 <StyledHeader>
                     <div>
