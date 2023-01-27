@@ -17,6 +17,7 @@ export const Footer = () => {
                         <Link
                             key={name}
                             href={link}
+                            title={name}
                             target="_blank">
                             <Icon />
                         </Link>
