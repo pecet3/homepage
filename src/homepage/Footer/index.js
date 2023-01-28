@@ -6,7 +6,14 @@ export const Footer = () => {
         <>
             <Wrapper>
                 <Title>Let`s Talk</Title>
-                <Header><Link href={`mailto:${email}`} title={email}>{email}</Link></Header>
+                <Header>
+                    <Link
+                        href={`mailto:${email}`}
+                        title={email}
+                        rel="noreferrer">
+                        {email}
+                    </Link>
+                </Header>
                 <Content>
                     I’m always open to new projects whenever I have the time.
                     If you have a website, dashboard or mobile app in mind and need some help
@@ -18,6 +25,7 @@ export const Footer = () => {
                             key={name}
                             href={link}
                             title={name}
+                            rel="noreferrer"
                             target="_blank">
                             <Icon />
                         </Link>
