@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Container = styled.div`
+export const Wrapper = styled.div`
     background-color: ${({ theme }) => theme.elementColors.tileBackground};
     color: ${({ theme }) => theme.elementColors.text};
     padding: 56px;
