@@ -6,6 +6,12 @@ export const Wrapper = styled.div`
     align-self: flex-start;
     align-items: center;
     order: 2;
+    background-color: transparent;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+    }
 
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
         order: 0;
@@ -43,10 +49,6 @@ export const Switch = styled.div`
     justify-content: flex-start;
     padding: 2px;
     
-    &:hover{
-        cursor: pointer;
-    }
-
     ${({ isDarkTheme }) => isDarkTheme && css`
 
         @media (max-width:${({ theme }) => theme.breakpoints.large}px){
