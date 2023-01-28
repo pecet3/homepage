@@ -12,7 +12,7 @@ function Homepage() {
       <HomepageWrapper>
         <Header />
         {listContent.map(({ content, icon, title }) => (
-          <List
+          <List as="li"
             title={title}
             list={content}
             icon={icon}
