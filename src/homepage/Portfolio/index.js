@@ -30,7 +30,12 @@ export const Portfolio = () => {
     const userStatus = useSelector(selectUserStatus);
     return (
         <>
-            <Link href={github} target="_blank"><Icon /></Link>
+            <Link
+                rel="noreferrer"
+                href={github}
+                target="_blank">
+                <Icon />
+            </Link>
             <Header>Portfolio</Header>
             <Description>My recent project</Description>
 
@@ -51,7 +56,7 @@ export const Portfolio = () => {
                 }
                 {reposLength % 2 === 1 &&
                     userStatus === "error"
-                    ? <Tile />
+                    ? <Tile as="li" />
                     : userStatus === "loading"
                         ? <p />
                         : <AdditionalTile
