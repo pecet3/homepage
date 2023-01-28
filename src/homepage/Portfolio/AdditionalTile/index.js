@@ -1,6 +1,6 @@
 import { github } from "../../../common/personalInfo";
 import {
-    StyledContainer,
+    StyledWrapper,
     StyledHeader,
     Avatar,
     StyledDescription,
@@ -22,7 +22,7 @@ export const AdditionalTile = ({
             href={github}
             title="Link to my Github profile"
             target="_blank">
-            <StyledContainer>
+            <StyledWrapper>
                 <StyledHeader>
                     <div>
                         {name && name}
@@ -43,7 +43,7 @@ export const AdditionalTile = ({
                             🧙‍♂️ {followers} followers, {following && following} following
                         </StyledLink>}
                 </StyledDetailsWrapper>
-            </StyledContainer>
+            </StyledWrapper>
         </StyledLink>
     )
 };
