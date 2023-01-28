@@ -2,12 +2,12 @@ import styled from "styled-components";
 import {
     Description,
     Header,
-    Container,
+    Wrapper,
     DetailsWrapper,
     Link,
 } from "../Tile/styled";
 
-export const StyledContainer = styled(Container)`
+export const StyledWrapper = styled(Wrapper)`
     padding: 24px 24px 56px 56px;
 
     @media (max-width:${({ theme }) => theme.breakpoints.large}px){
