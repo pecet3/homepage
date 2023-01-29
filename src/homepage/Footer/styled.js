@@ -18,7 +18,7 @@ export const Title = styled.p`
     color: ${({ theme }) => theme.elementColors.text};
 `;
 
-export const Header = styled.h2`
+export const Header = styled.header`
     color: ${({ theme }) => theme.elementColors.textImportant};
     font-weight: 900;
     font-size: 32px;

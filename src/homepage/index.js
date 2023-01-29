@@ -1,8 +1,8 @@
-import { List } from '../common/List';
+import { List } from './List';
 import { Portfolio } from './Portfolio';
 import { Header } from './Header';
 import { Footer } from './Footer';
-import { listContent } from '../common/List/content';
+import { listContent } from './List/content';
 import { nanoid } from 'nanoid';
 import { HomepageWrapper } from './styled';
 
@@ -12,14 +12,14 @@ function Homepage() {
       <HomepageWrapper>
         <Header />
         {listContent.map(({ content, icon, title }) => (
-          <List as="li"
+          <List
             title={title}
             list={content}
             icon={icon}
             key={nanoid()}
           />
         ))}
-        <Portfolio />
+        <Portfolio as="section" />
         <Footer />
       </HomepageWrapper>
     </>

@@ -36,4 +36,4 @@ export const listContent = [
         content: nextToLearn,
         icon: "🚀",
     },
-]
+];

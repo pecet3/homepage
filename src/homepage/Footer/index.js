@@ -1,12 +1,19 @@
 import { email } from "../../common/personalInfo";
 import { socialMedia } from "./socialMedia";
-import { Title, Wrapper, Content, IconsContainer, Link, Header } from "./styled";
+import {
+    Title,
+    Wrapper,
+    Content,
+    IconsContainer,
+    Link,
+    Header,
+} from "./styled";
 export const Footer = () => {
     return (
         <>
-            <Wrapper>
-                <Title>Let`s Talk</Title>
+            <Wrapper as="footer">
                 <Header>
+                    <Title>Let`s Talk</Title>
                     <Link
                         href={`mailto:${email}`}
                         title={email}

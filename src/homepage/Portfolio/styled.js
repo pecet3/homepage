@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import { ReactComponent as GitHubIcon } from "../../common/mediaIcons/github.svg";
 
+export const Wrapper = styled.section`
+
+`;
+
 export const TilesWrapper = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,7 +32,7 @@ export const Icon = styled(GitHubIcon)`
         height: 32px;
     }
 `;
-export const Header = styled.h2`
+export const Header = styled.header`
     color: ${({ theme }) => theme.elementColors.textImportant};
     font-style: normal;
     font-weight: 900;
@@ -64,5 +68,5 @@ export const Description = styled.p`
 `;
 
 export const Link = styled.a`
-    
+    text-decoration: none;
 `;

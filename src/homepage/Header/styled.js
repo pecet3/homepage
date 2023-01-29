@@ -1,9 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const Wrapper = styled.div`
-    
     margin-bottom: 72px;
-    max-width: 1200px;
     display: grid;
     grid-template-columns: auto auto auto;
 
@@ -46,6 +44,7 @@ export const TextContainer = styled.div`
     text-align: left;
     flex-direction: column;
     justify-content: center;
+    letter-spacing: 0.05em;
     
 
     @media (max-width:${({ theme }) => theme.breakpoints.mobile}px){
@@ -74,7 +73,6 @@ export const MyName = styled.h1`
     font-weight: 900;
     font-size: 38px;
     line-height: 46px;
-    letter-spacing: 0.05em;
     margin: 0 0 36px 0 ;
     color: ${({ theme }) => theme.elementColors.textImportant};
 
@@ -89,7 +87,6 @@ export const About = styled.p`
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
-    letter-spacing: 0.05em;
     margin: 0 0 32px 0 ;
     color: ${({ theme }) => theme.elementColors.text};
 

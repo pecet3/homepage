@@ -5,7 +5,7 @@ export const List = ({ title, icon, list }) => {
     const getListElement = element => <Li key={element}><Dot>•</Dot>{element}</Li>
     return (
         <>
-            <Wrapper>
+            <Wrapper as="section">
                 <Title>{title}
                     <TitleIcon>
                         {icon}

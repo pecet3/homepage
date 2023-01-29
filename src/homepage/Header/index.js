@@ -18,7 +18,7 @@ export const Header = () => {
     const isDarkTheme = useSelector(selectIsDarkTheme);
     return (
         <>
-            <Wrapper>
+            <Wrapper as="header">
                 <Photo src={HeaderPhoto} darkTheme={isDarkTheme ? true : false} alt="Moje zdjęcie" />
                 <ThemeSwith />
                 <TextContainer>
@@ -28,7 +28,7 @@ export const Header = () => {
                         I'm a passionate Frontend Developer in love with React, currently looking for new job opportunities.
                     </About>
                     <HireMe href={`mailto:${email}`} title={email}>
-                        <HireMeIcon src={hireMeIcon} alt="send me an e-mail" autofocus />
+                        <HireMeIcon src={hireMeIcon} alt="send me an e-mail" autoFocus />
                         Hire me
                     </HireMe>
                 </TextContainer>

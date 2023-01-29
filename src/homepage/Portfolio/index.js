@@ -7,14 +7,15 @@ import {
     selectReposLength,
     selectReposStatus,
     selectUser,
-    selectUserStatus
+    selectUserStatus,
 } from "../../common/github/githubSlice";
 import {
+    Wrapper,
     Description,
     Header,
     Icon,
     Link,
-    TilesWrapper
+    TilesWrapper,
 } from "./styled";
 import { Loading } from "./Loading";
 import { AdditionalTile } from "./AdditionalTile";
@@ -30,46 +31,50 @@ export const Portfolio = () => {
     const userStatus = useSelector(selectUserStatus);
     return (
         <>
-            <Link
-                rel="noreferrer"
-                href={github}
-                target="_blank">
-                <Icon />
-            </Link>
-            <Header>Portfolio</Header>
-            <Description>My recent project</Description>
+            <Wrapper as="section">
+                <Header>
+                    <Link
+                        rel="noreferrer"
+                        href={github}
+                        target="_blank">
+                        <Icon title="github icon" />
+                    </Link>
+                    <Header as="h2">Portfolio</Header>
+                    <Description>My recent project</Description>
+                </Header>
 
-            <TilesWrapper notSuccess={reposStatus !== "success" ? true : false}>
-                {
-                    reposStatus === "error"
-                        ? <Error />
-                        : reposStatus === "loading"
-                            ? <Loading />
-                            : repos.map((repo) =>
-                                <Tile as="li"
-                                    key={nanoid()}
-                                    url={repo.html_url}
-                                    description={repo.description}
-                                    gitUrl={repo.html_url}
-                                    name={repo.name}
-                                />)
-                }
-                {reposLength % 2 === 1 &&
-                    userStatus === "error"
-                    ? <Tile as="li" />
-                    : userStatus === "loading"
-                        ? <p />
-                        : <AdditionalTile
-                            login={user.login}
-                            avatar={user.avatar_url}
-                            bio={user.bio}
-                            location={user.location}
-                            followers={user.followers}
-                            name={user.name}
-                            following={user.following}
-                        />}
-            </TilesWrapper>
-
+                <TilesWrapper
+                    notSuccess={reposStatus !== "success" ? true : false}>
+                    {
+                        reposStatus === "error"
+                            ? <Error />
+                            : reposStatus === "loading"
+                                ? <Loading />
+                                : repos.map((repo) =>
+                                    <Tile as="li"
+                                        key={nanoid()}
+                                        url={repo.html_url}
+                                        description={repo.description}
+                                        gitUrl={repo.html_url}
+                                        name={repo.name}
+                                    />)
+                    }
+                    {reposLength % 2 === 1 &&
+                        userStatus === "error"
+                        ? <Tile as="li" />
+                        : userStatus === "loading"
+                            ? <p />
+                            : <AdditionalTile
+                                login={user.login}
+                                avatar={user.avatar_url}
+                                bio={user.bio}
+                                location={user.location}
+                                followers={user.followers}
+                                name={user.name}
+                                following={user.following}
+                            />}
+                </TilesWrapper>
+            </Wrapper>
         </>
     )
 };
