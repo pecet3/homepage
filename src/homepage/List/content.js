@@ -22,7 +22,7 @@ const nextToLearn = [
     "React Native",
     "Express.js",
     "Basics of Networking",
-    "SQL",
+    "MongoDB",
 ];
 
 export const listContent = [
