@@ -59,20 +59,17 @@ export const Portfolio = () => {
                                         name={repo.name}
                                     />)
                     }
-                    {reposLength % 2 === 1 &&
-                        userStatus === "error"
-                        ? <Tile as="li" />
-                        : userStatus === "loading"
-                            ? <p />
-                            : <AdditionalTile
-                                login={user.login}
-                                avatar={user.avatar_url}
-                                bio={user.bio}
-                                location={user.location}
-                                followers={user.followers}
-                                name={user.name}
-                                following={user.following}
-                            />}
+                    {reposLength % 2 === 1
+                        && userStatus === "success"
+                        && <AdditionalTile
+                            login={user.login}
+                            avatar={user.avatar_url}
+                            bio={user.bio}
+                            location={user.location}
+                            followers={user.followers}
+                            name={user.name}
+                            following={user.following}
+                        />}
                 </TilesWrapper>
             </Wrapper>
         </>
