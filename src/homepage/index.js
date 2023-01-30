@@ -11,15 +11,17 @@ function Homepage() {
     <>
       <HomepageWrapper>
         <Header />
-        {listContent.map(({ content, icon, title }) => (
-          <List
-            title={title}
-            list={content}
-            icon={icon}
-            key={nanoid()}
-          />
-        ))}
-        <Portfolio as="section" />
+        <main>
+          {listContent.map(({ content, icon, title }) => (
+            <List
+              title={title}
+              list={content}
+              icon={icon}
+              key={nanoid()}
+            />
+          ))}
+          <Portfolio as="section" />
+        </main>
         <Footer />
       </HomepageWrapper>
     </>
