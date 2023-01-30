@@ -25,7 +25,6 @@ function App() {
             <Wrapper>
                 <Homepage />
             </Wrapper>
-
         </ThemeProvider>
     )
 };
