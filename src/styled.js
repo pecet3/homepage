@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-    font-family: 'Inter', sans-serif;
     color: ${({ theme }) => theme.elementColors.text};
     background-color: ${({ theme }) => theme.elementColors.background};
     padding-top: 120px;
